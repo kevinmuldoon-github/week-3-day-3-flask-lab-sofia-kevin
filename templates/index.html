@@ -13,9 +13,8 @@
     {% for order in orders %}
     <tr>
         <td>
-            <a href="{{order.order_id}}">{{order.customer_name}}</a>
+            <a href="/orders/{{order.order_id}}">{{order.customer_name}}</a>
         </td>
-
     </tr>
     {% endfor %}
     </table>

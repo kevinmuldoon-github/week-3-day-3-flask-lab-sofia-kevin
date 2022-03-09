@@ -8,5 +8,5 @@ def index():
 
 @app.route('/orders/<order_id>')
 def get_order(order_id):
-    return render_template('order.html' , title='Orders Page', orders=orders)
+    return render_template('order.html' , title='Orders Page', orders=orders, id=order_id)
 
