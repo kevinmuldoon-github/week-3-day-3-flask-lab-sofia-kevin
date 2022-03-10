@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>{{title}}</title>
 </head>
 <body>
-    <h1>Order Details</h1>
+    <h1>Order Number: {{product.order_id}}</h1>
 
-    <table style="text-align:center;padding:15px;background-color: #fffafa; border:1px solid black">
+    <table class="order-table">
         <tr>
-            <td><strong>Order ID</strong></td>
-            <td><strong>Customer Name </strong></td>
-            <td><strong>Order Date</strong></td>
-            <td><strong>Quantity</strong></td>
+            <th><strong>Order ID</strong></td>
+            <th><strong>Customer Name </strong></td>
+            <th><strong>Order Date</strong></td>
+            <th><strong>Quantity</strong></td>
         </tr>
 
     <tr>
